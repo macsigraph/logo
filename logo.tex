@@ -1,0 +1,45 @@
+\documentclass{standalone}
+
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}[]
+
+  \pgfmathsetmacro{\dx}{1.3pt}  
+  \pgfmathsetmacro{\border}{0.65}
+ 
+  \tikzstyle{node}=[
+    circle,
+    draw=none,
+    fill=black!50!green,
+    inner sep=1.8pt,
+  ]
+  
+  \tikzstyle{edge}=[
+    draw=black!80!green,
+    line width=2.2pt,
+  ]
+  
+  \path(-\border, 0)--(\dx + \border, 0);
+  \path(0, -\border)--(0, 1 + \border);
+	      
+	\coordinate(c1) at (0, 0);
+	\coordinate(c2) at (0, 1);
+	\coordinate(c3) at (0.5*\dx, 0);
+	\coordinate(c4) at (\dx, 1);
+	\coordinate(c5) at (\dx, 0);
+
+  \draw[edge] (c1)--(c2);
+  \draw[edge] (c2)--(c3);
+  \draw[edge] (c3)--(c4);
+  \draw[edge] (c4)--(c5);
+
+  \node[node,fill=black!50!green,] at (c1) {};
+  \node[node,fill=black!50!green,] at (c2) {};
+  \node[node,fill=black!50!green,] at (c3) {};
+  \node[node,fill=black!50!green,] at (c4) {};
+  \node[node,fill=black!50!green,] at (c5) {};
+
+\end{tikzpicture}
+\end{document}
