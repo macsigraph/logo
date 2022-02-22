@@ -1,13 +1,12 @@
 \documentclass{standalone}
-
-\usepackage{pgfplots}
+\usepackage{tikz}
 
 \begin{document}
 
 \begin{tikzpicture}[]
-
-  \pgfmathsetmacro{\dx}{1.3pt}  
-  \pgfmathsetmacro{\border}{0.65}
+  
+  \def\dx{1.3}  
+  \def\border{0.65}
  
   \tikzstyle{node}=[
     circle,
@@ -23,7 +22,7 @@
   
   \path(-\border, 0)--(\dx + \border, 0);
   \path(0, -\border)--(0, 1 + \border);
-	      
+        
   \coordinate(c1) at (0, 0);
   \coordinate(c2) at (0, 1);
   \coordinate(c3) at (0.5*\dx, 0);
