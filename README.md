@@ -1,4 +1,4 @@
-![logo](logo.jpg)
+<img src="logo.jpg" alt="logo" width="200"/>
 
 ## macsigraph logo
 
