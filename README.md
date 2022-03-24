@@ -4,5 +4,5 @@
 
 ## macsigraph logo
 
-Generate by running
+Generate simply by running pdflatex on logo.tex, which contains a short Ti*k*Z script,
 > $ pdflatex logo.tex
