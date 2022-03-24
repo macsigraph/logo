@@ -1,4 +1,6 @@
-<p style="text-align:center;"><img src="logo.jpg" alt="logo" width="200"/></p>
+<p align="center">
+  <img src="logo.jpg" alt="logo" width="200"/>
+</p>
 
 ## macsigraph logo
 
