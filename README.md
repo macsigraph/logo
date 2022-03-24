@@ -1,3 +1,5 @@
+![logo](logo.jpg)
+
 ## macsigraph logo
 
 Generate by running
